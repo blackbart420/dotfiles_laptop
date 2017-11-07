@@ -38,7 +38,7 @@ height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 6.0
-fixed-center = true
+fixed-center = false
 
 ;background = ${colors.black}
 background = transparent
@@ -412,7 +412,7 @@ format-connected-underline = ${colors.gold}
 format-connected-background = ${colors.gold}
 label-connected-foreground = ${colors.black}
 label-connected-background = ${colors.gold}
-label-connected = %essid%
+label-connected = "%essid%   %local_ip%   %downspeed:7%  %upspeed:7%"
 
 format-disconnected = <label-disconnected>
 ;format-disconnected = <label-disconnected>
