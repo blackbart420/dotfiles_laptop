@@ -333,7 +333,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id vivaldi-stable
 
 # VSCode
-exec --no-startup-id code
+#exec --no-startup-id code
 
 # mails
 exec --no-startup-id mailspring
