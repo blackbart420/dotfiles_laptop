@@ -9,6 +9,7 @@
 
 ; material icons
 ;        
+; 
 
 [colors]
 ;background = ${xrdb:color0:#222}
@@ -72,7 +73,7 @@ font-4 = "Hack:size=11;2"
 
 
 modules-left = i3
-modules-center = arrowLeft3 filesystem memory cpu temperature arrowLeft xkeyboard arrowRight eth wireless-network arrowRight3
+modules-center = arrowLeft3 filesystem memory cpu temperature arrowLeft xkeyboard arrowRight wireless-network arrowRight3
 ;modules-right = volume xkeyboard arrowLeft2 filesystem memory cpu temperature arrowLeft eth arrowLeft2 date arrowLeft powermenu arrowLeft2
 modules-right = arrowLeft5 volume backlight-acpi arrowLeft2 date arrowLeft powermenu arrowLeft2
 
@@ -263,16 +264,16 @@ label-unfocused-foreground = ${colors.secondary}
 label-unfocused-background = ${colors.black}
 label-urgent-foreground = ${colors.gold}
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-4 = 4;
-ws-icon-3 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-4 = 4;
+ws-icon-3 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
 ws-icon-8 = 9;
-ws-icon-9 = 10;
+ws-icon-9 = 10;
 #      
 
 
@@ -295,7 +296,7 @@ type = internal/mpd
 ;   <icon-next>
 ;   <icon-seekb>
 ;   <icon-seekf>
-format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>   <label-song>   <bar-progress>  <label-time>
+format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-repeatone> <icon-random>   <label-song>   <bar-progress>  <label-time>
 ;format-playing = ${self.format-online}
 ;format-paused = ${self.format-online}
 ;format-stopped = ${self.format-online}
@@ -309,16 +310,16 @@ format-online-background = ${colors.gold}
 label-offline = "🎜 mpd is offline"
 
 
-icon-play = 
-icon-pause = 
-icon-stop = 
-icon-prev = " "
-icon-next = 
-icon-seekb = 
-icon-seekf = 
-icon-random = 
-icon-repeat = 
-icon-repeatone = 1
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+icon-repeatone = 
 
 label-song-maxlen = 100
 label-song-ellipsis = true
@@ -412,7 +413,8 @@ format-connected-underline = ${colors.gold}
 format-connected-background = ${colors.gold}
 label-connected-foreground = ${colors.black}
 label-connected-background = ${colors.gold}
-label-connected = "%essid%   %local_ip%   %downspeed:7%  %upspeed:7%"
+;label-connected = "%essid%   %local_ip%   %downspeed:7%  %upspeed:7%"
+label-connected = "%essid%  %downspeed:7%  %upspeed:7%"
 
 format-disconnected = <label-disconnected>
 ;format-disconnected = <label-disconnected>
@@ -475,7 +477,7 @@ format-underline = ${colors.gold}
 format-background = ${colors.gold}
 format-foreground = ${colors.black}
 
-label = " %date%  %time% "
+label = " %date%  %time% "
 
 
 [module/volume]
@@ -486,10 +488,10 @@ label-volume-foreground = #BA6B57
 format-muted = "    "
 format-muted-background = ${colors.black}
 format-muted-foreground = #BA6B57
-ramp-volume-0 = " "
-ramp-volume-1 = " "
-ramp-volume-2 = " "
-ramp-volume-3 = " "
+ramp-volume-0 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+ramp-volume-3 = " "
 ramp-volume-foreground = #BA6B57 
 bar-volume-width = 6
 bar-volume-indicator =
@@ -557,9 +559,9 @@ type = custom/menu
 label-active-font = 1
 format-spacing = 1
 format-background = ${colors.black}
-label-open = "   "
+label-open = "   "
 label-open-foreground = #BA6B57 
-label-close = 
+label-close = 
 label-close-foreground = ${colors.urgent}
 label-separator = |
 label-separator-foreground = ${colors.secondary}

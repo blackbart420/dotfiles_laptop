@@ -304,8 +304,8 @@ workspace $ws3 gaps outer 80
 #workspace $ws4 gaps outer 90
 #workspace $ws5 gaps outer 90
 #workspace $ws6 gaps outer 90
-workspace $ws7 gaps outer 80
-workspace $ws8 gaps outer 80
+workspace $ws7 gaps outer 50
+workspace $ws8 gaps outer 50
 workspace $ws9 gaps outer 80
 workspace $ws10 gaps outer 80
 
@@ -323,6 +323,7 @@ workspace $ws10 gaps outer 80
 
 # Redémarre polybar quand on redémarre i3
 exec_always --no-startup-id "killall polybar; polybar -r top & polybar -r bottom"
+#exec_always --no-startup-id "killall polybar; polybar -r top"
 
 
 # updates
