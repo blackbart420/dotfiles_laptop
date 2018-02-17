@@ -290,24 +290,24 @@ assign [class="Pamac-updater"] $ws8
 for_window [class="Pamac-updater"] focus
 
 # 9 : ncmpcpp
+assign [class="qBittorrent"] $ws9
 
 # 10 : thunar & torrent
 assign [class="Thunar"] $ws10
-assign [class="qBittorrent"] $ws10
 for_window [class="Thunar"] focus
 
 
 
-workspace $ws1 gaps inner 40
-#workspace $ws2 gaps inner 50
-workspace $ws3 gaps outer 80
+workspace $ws1 gaps inner 0
+workspace $ws2 gaps inner 0
+workspace $ws3 gaps outer 40
 #workspace $ws4 gaps outer 90
 #workspace $ws5 gaps outer 90
 #workspace $ws6 gaps outer 90
 workspace $ws7 gaps outer 50
 workspace $ws8 gaps outer 50
-workspace $ws9 gaps outer 80
-workspace $ws10 gaps outer 80
+workspace $ws9 gaps outer 60
+workspace $ws10 gaps outer 40
 
 
 
@@ -331,13 +331,13 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id pamac-tray
 
 # browser
-exec --no-startup-id vivaldi-stable
+exec --no-startup-id vivaldi-snapshot
 
 # VSCode
 #exec --no-startup-id code
 
 # mails
-exec --no-startup-id mailspring
+#exec --no-startup-id mailspring
 
 # slack
 #exec --no-startup-id slack
@@ -347,3 +347,6 @@ exec --no-startup-id dropbox start
 
 # power management for laptop (it also allows to use keyboard and screen brightness shortcuts)
 exec_always --no-startup-id xfce4-power-manager
+
+# wifi
+exec --no-startup-id nm-applet
