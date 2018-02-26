@@ -348,5 +348,5 @@ exec --no-startup-id dropbox start
 # power management for laptop (it also allows to use keyboard and screen brightness shortcuts)
 exec_always --no-startup-id xfce4-power-manager
 
-# wifi
+# network
 exec --no-startup-id nm-applet
